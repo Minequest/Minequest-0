@@ -65,6 +65,11 @@
 			<version>dev-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+			<groupId>org.spout</groupId>
+			<artifactId>vanilla</artifactId>
+			<version>dev-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>net.milkbowl.vault</groupId>
 			<artifactId>Vault</artifactId>
 			<version>1.2.9-SNAPSHOT</version>

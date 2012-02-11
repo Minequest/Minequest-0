@@ -1,0 +1,8 @@
+Create a CBEntity, CBPlayer, etc... as events are called.
+Ex. Entities that die will remove our collection
+of QuestEntitys, while entities that are spawned (such as a player
+joining the server) will add an entity to our collection.
+We can have a QuestManager take care of getting all this.
+(This sounds like SpoutPlugin now...)
+Have events tell us whether an entity was
+destroyed, created, modified, etc...
