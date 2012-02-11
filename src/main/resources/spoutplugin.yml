@@ -1,0 +1,10 @@
+name: MineQuest
+version: 1.00
+description: This plugin expands minecraft to add in Npcs, Quests, and custom events to create a Role-Play enviorment in Minecraft
+author: Monk
+
+main: com.cheetahlabs.minequest.SpoutStart
+protocol: Minecraft 1.1
+load: startup
+
+platform: BOTH
