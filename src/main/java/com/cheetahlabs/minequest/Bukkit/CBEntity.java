@@ -2,19 +2,19 @@ package com.cheetahlabs.minequest.Bukkit;
 
 import java.util.UUID;
 
-import org.bukkit.craftbukkit.entity.CraftEntity;
+import org.bukkit.entity.Entity;
 
 import com.cheetahlabs.minequest.APIs.QuestEntity;
 import com.cheetahlabs.minequest.APIs.QuestLocation;
 
 public class CBEntity implements QuestEntity {
 
-	public CraftEntity entity;
+	public Entity entity;
 	
-	public CBEntity(CraftEntity e){
+	public CBEntity(Entity e){
 		e = entity;
 	}
-	
+
 	@Override
 	public QuestLocation getLocation() {
 		// TODO Auto-generated method stub

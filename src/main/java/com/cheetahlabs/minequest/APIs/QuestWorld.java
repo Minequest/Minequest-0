@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public interface QuestWorld {
 
-	QuestWorld getWorld();
+	<W> W getNativeWorld();
 	String getName();
 	QuestPlayer getPlayers();
 	long getSeed();

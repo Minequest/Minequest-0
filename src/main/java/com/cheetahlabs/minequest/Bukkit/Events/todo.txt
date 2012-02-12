@@ -1,3 +1,7 @@
+EVENTS SHOULD CONTAIN NO IMPLEMENTATIONS.
+THEY SHOULD MERELY CALL RESPECTIVE METHODS IN MineQuest!
+
+
 Create a CBEntity, CBPlayer, etc... as events are called.
 Ex. Entities that die will remove our collection
 of QuestEntitys, while entities that are spawned (such as a player

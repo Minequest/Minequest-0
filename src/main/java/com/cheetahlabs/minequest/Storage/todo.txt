@@ -1,0 +1,4 @@
+Use PatPeter's SQL libraries
+Supports MySQL and SQLite...
+(http://forums.bukkit.org/threads/lib-tut-mysql-sqlite-bukkit-drivers.33849/page-6)
+^ Releasing a new version soon to fix lots of errors

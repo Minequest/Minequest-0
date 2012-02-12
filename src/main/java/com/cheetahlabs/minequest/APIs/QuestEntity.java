@@ -4,6 +4,7 @@ import java.util.UUID;
 
 public interface QuestEntity {
 
+	int getEntityID();
 	QuestLocation getLocation();
 	UUID getUniqueID();
 	void teleport(QuestLocation l);

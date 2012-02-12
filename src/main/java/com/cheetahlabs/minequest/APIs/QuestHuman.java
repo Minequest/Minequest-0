@@ -4,7 +4,7 @@ public interface QuestHuman extends QuestEntity {
 
 	int getHealth();
 	void setHealth(int h);
-	void damage(int health);
+	void damage(int d);
 	String getName();
 	
 }

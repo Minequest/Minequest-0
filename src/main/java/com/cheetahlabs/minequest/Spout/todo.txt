@@ -1,0 +1,8 @@
+Nothing here right now, but WaffleGod can go ahead
+and start making stuff for here. :)
+
+Why do we have something here? Well, Spout's server
+is still in ALPHA quality state :|
+But having the framework for it means that the moment
+Spout's API is done, we can release a plugin
+faster than ever.

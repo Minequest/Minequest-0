@@ -1,0 +1,2 @@
+Place all commands here.
+We can register them easily in BukkitStart.
