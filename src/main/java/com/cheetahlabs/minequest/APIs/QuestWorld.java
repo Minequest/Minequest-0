@@ -6,7 +6,7 @@ public interface QuestWorld {
 
 	<W> W getNativeWorld();
 	String getName();
-	QuestPlayer getPlayers();
+	QuestPlayer[] getPlayers();
 	long getSeed();
 	QuestLocation getSpawn();
 	UUID getUID();

@@ -1,11 +1,13 @@
 package com.cheetahlabs.minequest.Bukkit;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
+import com.cheetahlabs.minequest.BukkitStart;
 import com.cheetahlabs.minequest.APIs.QuestEntity;
 import com.cheetahlabs.minequest.APIs.QuestLocation;
 import com.cheetahlabs.minequest.APIs.QuestPlayer;
@@ -31,13 +33,13 @@ public class CBWorld implements QuestWorld {
 	}
 
 	@Override
-	public QuestPlayer getPlayers() {
+	public QuestPlayer[] getPlayers() {
 		List<Player> plist = world.getPlayers();
 		List<QuestPlayer> players = new ArrayList<QuestPlayer>();
 		for (Player p : plist){
-			
+			players.add(BukkitStart.manager.getPlayer(p.getName()));
 		}
-		return world.getPlayers();
+		return (QuestPlayer[])players.toArray(new CBPlayer[players.size()]);
 	}
 
 	@Override

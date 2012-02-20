@@ -2,6 +2,7 @@ package com.cheetahlabs.minequest.Bukkit;
 
 import java.util.UUID;
 
+import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
 import com.cheetahlabs.minequest.APIs.QuestEntity;
@@ -17,26 +18,27 @@ public class CBEntity implements QuestEntity {
 
 	@Override
 	public QuestLocation getLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CBLocation(entity.getLocation());
 	}
 
 	@Override
 	public UUID getUniqueID() {
-		// TODO Auto-generated method stub
-		return null;
+		return entity.getUniqueId();
 	}
 
 	@Override
 	public void teleport(QuestLocation l) {
-		// TODO Auto-generated method stub
-		
+		entity.teleport((Location)l.getNativeLocation());
 	}
 
 	@Override
 	public void teleport(QuestEntity e) {
-		// TODO Auto-generated method stub
-		
+		teleport(e.getLocation());
+	}
+
+	@Override
+	public int getEntityID() {
+		return entity.getEntityId();
 	}
 
 }

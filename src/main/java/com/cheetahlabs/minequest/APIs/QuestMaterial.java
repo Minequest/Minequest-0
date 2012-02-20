@@ -1,9 +1,9 @@
 package com.cheetahlabs.minequest.APIs;
 
-public interface QuestItem extends QuestEntity{
+public interface QuestMaterial {
 
 	int getItemId();
-	int getItemDamage();
+	short getItemDamage();
 	String[] getAliases();
 	
 }

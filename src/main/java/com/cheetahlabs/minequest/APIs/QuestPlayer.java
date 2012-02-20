@@ -15,12 +15,12 @@ public interface QuestPlayer extends QuestHuman {
 	float getExperience();
 	int getFood();
 	int getLevel();
-	int getGameMode();
+	boolean getGameMode();
 	void setFood(int f);
 	void setLevel(int l);
 	void setExperience(float exp);
 	void setTitle(String t);
-	void setGameMode(int g);
+	void setGameMode(boolean g);
 	<E> E getPlayer();
 	boolean isSleeping();
 }
